@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>{{title}}</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            Welcome to Mini Message Board
+        </header>
+        <div class="content">
+            <div class="container">
+                <div class="content__column">
+                    <form action="/new" method="POST">
+                        <div class="new-message__user">
+                            <label for="username">Input your name: </label>
+                            <input type="text" id="username" name="userName">
+                        </div>
+                        <div class="new-message__text">
+                            <label for="text">Input your message: </label>
+                            <input type="text" id="text" name="userMessage">
+                        </div>
+                        <button type="submit">Post the message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <span>Created by <a href="https://github.com/damirios">damirios</a>, 2022</span>
+        </footer>
+    </div>
+</body>
+</html>
