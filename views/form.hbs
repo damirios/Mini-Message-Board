@@ -18,11 +18,11 @@
                     <form action="/new" method="POST">
                         <div class="new-message__user">
                             <label for="username">Input your name: </label>
-                            <input type="text" id="username" name="userName">
+                            <input type="text" id="username" name="userName" required>
                         </div>
                         <div class="new-message__text">
                             <label for="text">Input your message: </label>
-                            <input type="text" id="text" name="userMessage">
+                            <textarea type="text" id="text" name="userMessage" required></textarea>
                         </div>
                         <button type="submit">Post the message</button>
                     </form>

@@ -25,7 +25,6 @@ router.get('/new', (req, res) => {
 });
 
 router.post('/new', (req, res) => {
-    console.log(req);
     const {userMessage, userName} = req.body;
     messages.push({text: userMessage, user: userName, added: prettyDate(new Date())});
     res.redirect('/');

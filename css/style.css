@@ -24,7 +24,7 @@
 
 .content {
     flex: 1 0 auto;
-    background-color: rgb(199, 125, 28);
+    background-color: rgb(236, 147, 31);
 }
 
 .footer {
@@ -50,12 +50,14 @@
     padding: 20px 0;
 }
 
-.content-column {
+.content__column {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
     align-items: center;
 }
+
+/* route / ============================================= */
 
 .content__header {
     display: flex;
@@ -104,6 +106,7 @@
     border-radius: 5px;
     border: 1px solid #222;
     box-shadow: 1px 1px 5px #333;
+    background-color: rgb(32, 90, 5);
 }
 
 .message-block ul {
@@ -139,8 +142,75 @@
     letter-spacing: 1px;
 }
 
+/* route new/ ============================================= */
+.content__column form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 100%;
+}
 
+.content__column form div {
+    border-radius: 5px;
+    border: 1px solid #333;
+    padding: 15px;
+    width: 100%;
+    background-color: #999;
+    box-shadow: 1px 1px 5px #333;
+}
 
+.content__column form div label {
+    display: block;
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.content__column form div input {
+    height: 50px;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #000;
+}
+
+.content__column form div textarea {
+    resize: none;
+    height: 200px;
+    width: 100%;
+    padding: 10px;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #000;
+}
+
+.content__column form button {
+    border-radius: 5px;
+    width: 240px;
+    height: 70px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: rgb(67, 218, 21);
+    box-shadow: 2px 2px 5px #555;
+    outline: 0;
+    border: 1px solid #000;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: background-color 0.3s ease-in-out 0s;
+}
+
+.content__column form button:hover {
+    background-color: rgb(79, 230, 33);
+}
+.content__column form button:active {
+    box-shadow: 0px 0px 5px rgb(3, 241, 63);
+}
 
 /* footer ============================================= */
 .footer a {
